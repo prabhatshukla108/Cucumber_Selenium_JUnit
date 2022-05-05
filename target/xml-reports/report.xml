@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="124.645">
+    <testcase classname="Account Page Feature" name="Accounts page title" time="22.637">
+        <system-out><![CDATA[Given user has already logged in to application.............................passed
+Given user is on Accounts page..............................................passed
+When user gets the title of the page........................................passed
+Then page title should be "My account - My Store"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Account Page Feature" name="Accounts section count" time="10.601">
+        <system-out><![CDATA[Given user has already logged in to application.............................passed
+Given user is on Accounts page..............................................passed
+Then user gets accounts section.............................................passed
+And accounts section count should be 6......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Contact Us Feature" name="Contact Us scenario with different set of data" time="13.169">
+        <system-out><![CDATA[Given user navigates to contact us page.....................................passed
+When user fills the form from given sheetname "contactus" and rownumber 0...passed
+And user clicks on send button..............................................passed
+Then it shows a successful message "Your message has been successfully sent to our team.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Contact Us Feature" name="Contact Us scenario with different set of data 2" time="15.28">
+        <system-out><![CDATA[Given user navigates to contact us page.....................................passed
+When user fills the form from given sheetname "contactus" and rownumber 1...passed
+And user clicks on send button..............................................passed
+Then it shows a successful message "Your message has been successfully sent to our team.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login page feature" name="Login page title" time="10.126">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user gets the title of the page........................................passed
+Then page title should be "Login - My Store"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login page feature" name="Forgot Password link" time="20.183">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?111&quot;}&#10;  (Session info: chrome=101.0.4951.41)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-QGETMHA4', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\prabh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56011}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 44c552befe38db20db33afcbcb755aa9&#10;*** Element info: {Using=link text, value=Forgot your password?111}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is on login page.................................................passed
+Then forgot your password link should be displayed..........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QGETMHA4', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\prabh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56011}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 44c552befe38db20db33afcbcb755aa9
+*** Element info: {Using=link text, value=Forgot your password?111}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
+	at com.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:38)
+	at parallel.LoginPageSteps.forgot_your_password_link_should_be_displayed(LoginPageSteps.java:37)
+	at ✽.forgot your password link should be displayed(file:///C:/Users/prabh/prabhat/Project/SeleniumPOM/SeleniumCucumnnberDemo/src/test/resources/parallel/LoginPage.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="Login page feature" name="Login with correct credentials" time="12.249">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+When user enters username "dec2020secondbatch@gmail.com"....................passed
+And user enters password "Selenium@12345"...................................passed
+And user clicks on Login button.............................................passed
+Then user gets the title of the page........................................passed
+And page title should be "My account - My Store"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Account Page Feature" name="Accounts page title" time="10.291">
+        <system-out><![CDATA[Given user has already logged in to application.............................passed
+Given user is on Accounts page..............................................passed
+When user gets the title of the page........................................passed
+Then page title should be "My account - My Store"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Account Page Feature" name="Accounts section count" time="9.531">
+        <system-out><![CDATA[Given user has already logged in to application.............................passed
+Given user is on Accounts page..............................................passed
+Then user gets accounts section.............................................passed
+And accounts section count should be 6......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
